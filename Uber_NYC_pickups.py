@@ -26,8 +26,10 @@ data = load_data(10000)
 data_load_state.text("Done! (using st.cache_data)")
 
 if st.checkbox('Show raw data'):
-  st.subheader('Raw data')
+  st.subheader('Raw data being displayed')
   st.write(data)
+else:
+  st.subheader('Select to display row data')
 
 if st.checkbox('Show bar chart'):
   st.subheader('Number of pickups by hour')
